@@ -1,0 +1,19 @@
+@samitolvanen 
+Hi, I am a beginner. I am very interested in the LTO kernel at present and want to use LTO to compile the kernel on ARM. 
+I have a problem and I am confused in it for several days. Could you help me to solve the problem below?
+My machine is aarch64, and clang is 11.0
+![image](https://user-images.githubusercontent.com/57284757/100039378-0f098980-2e40-11eb-981f-994e3a6ad4d5.png)
+
+The version of kernel is [lto-v7](https://github.com/samitolvanen/linux/releases/tag/lto-v7). I run `make defconfig && make menuconfig` .  
+
+![image](https://user-images.githubusercontent.com/57284757/100038253-9ce47500-2e3e-11eb-89fb-734b15ca75ac.png)
+
+![image](https://user-images.githubusercontent.com/57284757/100038094-5f7fe780-2e3e-11eb-86c1-49ae627778d4.png)
+
+![image](https://user-images.githubusercontent.com/57284757/100041182-ce137400-2e43-11eb-9d9e-3f5ce4f7444f.png)
+
+It seems that LTO cannot be selected. There is only one 'LTO_ NONE' option. So I run `make LLVM=1 CONFIG_LTO_CLANG=1 CONFIG_LTO=1 vmlinux -j128 ` to make the LTO selection, but the compilation failed. I also try `make modules  LLVM=1 CONFIG_LTO_CLANG=1 CONFIG_LTO=1 -j128 && make  LLVM=1 CONFIG_LTO_CLANG=1 CONFIG_LTO=1  -j128` , and  the mistake is the same.
+
+![error](https://user-images.githubusercontent.com/57284757/100039803-f5b50d00-2e40-11eb-87db-942326c17c9d.png)
+
+How can I compile the kernel successfully with LTO in my machine?  I am looking for your reply! thank you!
