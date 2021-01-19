@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-19T09:29:52.360Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="x-7Qs0t56FGLVToeplg0" version="14.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-19T09:43:40.987Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="FtRPRhR62_9k6cxQLZT_" version="14.2.4" type="github">
   <diagram id="GdB9ARNnYLUnV3MUq9Q7" name="Page-1">
     <mxGraphModel dx="2249" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="4IkLFCAA3DbMa402_Vh1-3" value="cc1 执行pass执行" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontFamily=Helvetica;align=center;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-3" value="cc1 pass执行" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontFamily=Helvetica;align=center;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="19" y="390" width="700" height="290" as="geometry" />
         </mxCell>
         <mxCell id="4IkLFCAA3DbMa402_Vh1-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-4" target="4IkLFCAA3DbMa402_Vh1-2">
@@ -45,6 +45,63 @@
         </mxCell>
         <mxCell id="4IkLFCAA3DbMa402_Vh1-15" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;3、文件内部处理（区别于lto）：&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;execute_ipa_pass_list (&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;all_late_ipa_passes&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="38.5" y="550" width="661" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-28" target="4IkLFCAA3DbMa402_Vh1-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-28" value="开始(lto partition=none)" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1099" y="130" width="161" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-30" target="4IkLFCAA3DbMa402_Vh1-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-30" value="cc1预处理，无pass执行" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1104" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-32" target="4IkLFCAA3DbMa402_Vh1-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1179" y="690" />
+              <mxPoint x="780" y="690" />
+              <mxPoint x="780" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-32" value="cc1 pass执行" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontFamily=Helvetica;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="829" y="370" width="700" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-34" target="4IkLFCAA3DbMa402_Vh1-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-34" value="num(file.c) = 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1071" y="210" width="216" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-35" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;1、对所有函数： execute_pass_list&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;(func，&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;all_lowering_passes&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="849.5" y="420" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-36" target="4IkLFCAA3DbMa402_Vh1-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-36" value="&lt;div style=&quot;font-size: 12px; line-height: 24px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px;&quot;&gt;2、文件内部处理：execute_ipa_pass_list(passes-&amp;gt;all_small_ipa_passes);&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="849.5" y="480" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-52" value="&lt;div style=&quot;line-height: 24px&quot;&gt;3、生成摘要信息（IPA PASS会用到的信息，如函数大小，调用图等）：ipa_write_summaries_2(all_regular_ipa_passes)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="849.5" y="540" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-55" value="&lt;div style=&quot;line-height: 24px&quot;&gt;4、生成lto字节码，即.s文件：write_lto(void)&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="850" y="600" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-57" value="lto1 pass执行" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontFamily=Helvetica;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="700" width="700" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-60" value="&lt;div style=&quot;line-height: 24px&quot;&gt;7、过程间优化后执行1中所有对函数（可能已变化）的优化，调用RTL pass生成汇编：execute_ipa_pass_list (all_passes);&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="847" y="830" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-61" value="&lt;div style=&quot;line-height: 24px&quot;&gt;6、文件（所有源码）内部处理（区别于no lto）：execute_ipa_pass_list (all_late_ipa_passes);&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="847" y="780" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-62" value="&lt;div style=&quot;line-height: 24px&quot;&gt;5、读取所有.o文件，对文件调用图求并集；读取摘要信息：read_cgraph_and_symbols (num_in_fnames, in_fnames)&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="847" y="730" width="660" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
