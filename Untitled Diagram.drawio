@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2020-10-18T05:44:12.986Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" version="13.8.0" etag="JkySnDF6LrtHZeUWgkHD" type="github"><diagram id="GdB9ARNnYLUnV3MUq9Q7">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-19T09:29:52.360Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="x-7Qs0t56FGLVToeplg0" version="14.2.4" type="github">
+  <diagram id="GdB9ARNnYLUnV3MUq9Q7" name="Page-1">
+    <mxGraphModel dx="2249" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-1" target="4IkLFCAA3DbMa402_Vh1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-1" value="开始(no lto)" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="309" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-2" target="4IkLFCAA3DbMa402_Vh1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-2" value="cc1预处理，无pass执行" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="294" y="300" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-3" target="4IkLFCAA3DbMa402_Vh1-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="369" y="700" />
+              <mxPoint x="-30" y="700" />
+              <mxPoint x="-30" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-3" value="cc1 执行pass执行" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontFamily=Helvetica;align=center;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="19" y="390" width="700" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="4IkLFCAA3DbMa402_Vh1-4" target="4IkLFCAA3DbMa402_Vh1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-4" value="num(file.c) = 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="261" y="220" width="216" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-12" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;1、对所有函数： execute_pass_list&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;(func，&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;all_lowering_passes&lt;/span&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="39.5" y="430" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-13" value="&lt;div style=&quot;font-size: 12px; line-height: 24px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 12px;&quot;&gt;2、文件内部处理：execute_ipa_pass_list(passes-&amp;gt;all_small_ipa_passes);&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="39.5" y="490" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-14" value="&lt;span style=&quot;font-size: 12px&quot;&gt;4、过程间优化后执行1中所有对函数（可能已变化）的优化，调用RTL pass生成汇编：execute_ipa_pass_list (all_passes);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="39.5" y="620" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4IkLFCAA3DbMa402_Vh1-15" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;3、文件内部处理（区别于lto）：&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;execute_ipa_pass_list (&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;all_late_ipa_passes&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="38.5" y="550" width="661" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
